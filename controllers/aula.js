@@ -24,12 +24,13 @@ module.exports = function(app) {
         const aula = await AulaModel.findByPk(id)
         aula.nome = request.body.nome
         await aula.save()
+        response.json(aula)
     })
     
     app.delete('/aulas/:id', async function (request, response) {
         const id = parseInt(request.params.id)
         const aula = await AulaModel.findByPk(id)
-        aula.nome = request.body.nome
         await aula.destroy()
+        response.json({status: "success"})
     })
 };
