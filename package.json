@@ -1,0 +1,27 @@
+{
+  "name": "api-node-prog3",
+  "version": "1.0.0",
+  "description": "Api para apresentar para turma de programação 3 como construir algo com nodejs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmmaycon/api-node-prog3.git"
+  },
+  "author": "dmmaycon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmmaycon/api-node-prog3/issues"
+  },
+  "homepage": "https://github.com/dmmaycon/api-node-prog3#readme",
+  "dependencies": {
+    "consign": "^0.1.6",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "sequelize": "^6.6.2",
+    "sqlite3": "^5.0.2"
+  }
+}
