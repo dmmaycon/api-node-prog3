@@ -1,11 +1,13 @@
 const express = require('express')
 const app = express()
+const cors = require('cors')
 const consign = require('consign')
 const Sequelize = require('sequelize');
 const sequelize = new Sequelize("sqlite::memory:");
 
 sequelize.sync({ force: true });
 
+app.use(cors())
 app.use(express.json())
 app.set('sequelize', sequelize);
 
